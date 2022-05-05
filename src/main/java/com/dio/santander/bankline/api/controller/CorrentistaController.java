@@ -25,13 +25,13 @@ public class CorrentistaController {
 	@Autowired
 	private CorrentistaService service;
 	
-	@GetMapping("/findAll")
+	@GetMapping("")
 	public List<Correntista> findAll() {
 		
 		return repository.findAll();
 	}
 	
-	@PostMapping("/save")
+	@PostMapping("")
 	public void save(@RequestBody NovoCorrentista correntista) {
 		
 		service.save(correntista);
